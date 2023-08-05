@@ -171,10 +171,10 @@ print(df[:15])
 # df = pd.read_csv("mystocks.csv")
 # print(df[:15])
 
-w120_meaning_en_dict= np.load(r'C:\Users\Terry\Desktop\temp_data_store\Incumbrance Project/w120_meaning_en_dict.npy', allow_pickle=True).item()
-w120_meaning_zh_dict= np.load(r'C:\Users\Terry\Desktop\temp_data_store\Incumbrance Project/w120_meaning_zh_dict.npy', allow_pickle=True).item()
-sim_meaning_en_dict= np.load(r'C:\Users\Terry\Desktop\temp_data_store\Incumbrance Project/sim_meaning_en_dict.npy', allow_pickle=True).item()
-sim_meaning_zh_dict= np.load(r'C:\Users\Terry\Desktop\temp_data_store\Incumbrance Project/sim_meaning_zh_dict.npy', allow_pickle=True).item()
+w120_meaning_en_dict= np.load(r'../assets/w120_meaning_en_dict.npy', allow_pickle=True).item()
+w120_meaning_zh_dict= np.load(r'../assets/w120_meaning_zh_dict.npy', allow_pickle=True).item()
+sim_meaning_en_dict= np.load(r'../assets/sim_meaning_en_dict.npy', allow_pickle=True).item()
+sim_meaning_zh_dict= np.load(r'../assets/sim_meaning_zh_dict.npy', allow_pickle=True).item()
 
 simple_text = dcc.Markdown('{}'.format('a')
 )
@@ -327,6 +327,6 @@ def toggle_collapse(n, is_open):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, port=8050)
+    app.run_server(debug=True, port=8055)
 
 # https://youtu.be/0mfIK8zxUds
